@@ -31,8 +31,7 @@ print(data)
 COMMENT = data["comment"]["body"]
 USERNAME = data["comment"]["user"]["login"]
 
-if not data["comment"][
-        "issue_url"] == "https://github.com/CN-DST-DEVELOPER/CN-DST-DEVELOPER.github.io/issues/1":
+if not data["comment"]["issue_url"] == 'https://api.github.com/repos/CN-DST-DEVELOPER/CN-DST-DEVELOPER.github.io/issues/1':
     sys.exit()
 
 if ".invite @" not in COMMENT and ".invite me" not in COMMENT:
