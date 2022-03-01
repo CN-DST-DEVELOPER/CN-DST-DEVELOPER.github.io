@@ -3,35 +3,30 @@ layout: default
 title: "模组开发规范"
 permalink: /_pages/DevelopmentStandard
 ---
-## 模组开发规范 <sub>2022.02.26</sub>
+## 模组开发规范 <sub>2022.03.01</sub>
 
 建议采用vscode作为开发编辑器，以下均以vscode为例
 
 1. 代码格式化使用vscode-lua插件，使用tab缩进，tab长度为4
-2. Git提交名、文件内作者名均使用Steam昵称；文件头注释应至少包含以下项
+2. 为防混乱，Git提交名、文件内作者名、Steam昵称应保持一致；文件头注释应至少包含以下项
 
    ```
    --[[ 
-   Copyright [yyyy] [name of copyright owner]
-
+   
+   Copyright 2022 Fengying
+   
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
-
+   
        http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
-   ]]
+   
+   ]] --
    ```
    yyyy改为当前年份，name of copyright owner改为此文件作者名
-
+   
    可选内容：
-
+   
    ```
    Description:
    	此文件功能介绍
@@ -51,17 +46,17 @@ permalink: /_pages/DevelopmentStandard
    		self.word="hello world!"
    	end
    )
-
+   
    function say:HelloWorld()
    	print(self.word)
    end
-
+   
    ./scripts/prefabs/animals.lua
    ......
    local function do_flash(inst)
    	inst:flash()
    end
-
+   
    local function fn(Sim)
    	local inst = CreateEntity()
    	inst.time="60"
@@ -71,14 +66,14 @@ permalink: /_pages/DevelopmentStandard
        inst.TryFlash=function(inst)
            ......
        end
-
+   
    	return inst
    end
-
+   
    return Prefab("animals", fn, assets, prefabs)
-
+   
    ./scripts/otherfile.lua
-
+   
    local animals = SpawnPrefab("animals")
    animals:TryFlash()
    ```
