@@ -1,6 +1,7 @@
 plugins:
   - jekyll-relative-links
 relative_permalinks: false
+permalink: pretty
 site_favicon: favicon.ico
 include:
   - _pages

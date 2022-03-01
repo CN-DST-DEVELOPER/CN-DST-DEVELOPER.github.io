@@ -1,8 +1,3 @@
----
-layout: default
-title: "模组开发规范"
-permalink: /_pages/DevelopmentStandard
----
 ## 模组开发规范 <sub>2022.03.01</sub>
 
 建议采用vscode作为开发编辑器，以下均以vscode为例

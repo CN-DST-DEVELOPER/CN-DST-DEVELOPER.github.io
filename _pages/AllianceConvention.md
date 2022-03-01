@@ -1,8 +1,3 @@
----
-layout: default
-title: "饥荒联机版模组开发联盟公约"
-permalink: /_pages/AllianceConvention
----
 ## 饥荒联机版模组开发联盟公约 <sub>2022.02.26</sub>
 
 1. 饥荒联机版模组开发者联盟是一个由爱好驱动的、以团结互助为基本原则、资源共享的、非盈利性组织。
