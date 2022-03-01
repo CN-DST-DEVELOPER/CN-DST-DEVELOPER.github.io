@@ -24,7 +24,6 @@ permalink: /_pages/AllianceConvention
     作者已参与饥荒联机版模组开发联盟(https://github.com/CN-DST-DEVELOPER)
     本模组已开源在GitHub上：[开源链接]
     欢迎开发模组的大佬或萌新加入我们的开发交流群：738207764
-    违反联盟公约盗用并发布联盟中开源代码且警告后拒不修改的作者名单：
 
 代码引用者：
 
